@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script type="application/javascript" th:src="@{/js/jquery-1.4.4.min.js}"></script>
+
+<body>
+      <form id="form1" method="post" th:action="@{/user/login}">
+        <table>
+            <tr>
+                <td>用户名<input type="text" name="username"></td>
+            </tr>
+            <tr>
+                <td>密码<input type="text" name="password"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="登陆"/></td>
+            </tr>
+            <p th:if="${not #strings.isEmpty(message)}">[[${message}]]</p>
+        </table>
+      </form>
+</body>
+</html>
