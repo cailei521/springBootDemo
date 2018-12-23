@@ -9,6 +9,7 @@ public class SpringbootQuickApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootQuickApplication.class, args);
 	}
+	public void Test(){};
 
 }
 
